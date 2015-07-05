@@ -1,0 +1,17 @@
+body{
+  height: 100%;
+}
+
+.whiteText{
+  color: #fff;
+  font-size: 60px;
+}
+
+.blackText{
+  color: #000;
+  font-size: 60px;
+}
+
+.prompt{
+  font-size: 65px;
+}

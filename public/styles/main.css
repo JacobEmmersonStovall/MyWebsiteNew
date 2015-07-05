@@ -1,0 +1,99 @@
+/* Font */
+@font-face {
+    font-family: myFont;
+    src: url(LeagueGothic-Regular.otf);
+}
+
+body{
+  font-family: myFont;
+  font-size: 25px;
+  margin: 0 0 0 0;
+  }
+
+/* Coloring */
+
+.whiteBack{
+  color: #b53c18;
+  background-color: white;
+}
+
+.redBack{
+  background-color: #b53c18;
+  color: white;
+}
+
+/*Positioning */
+.resume > *{
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  font-size: 30px;
+}
+
+.description{
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+h1,h3,h5{
+  margin: 0;
+}
+
+.resTitle{
+  padding-bottom: 10px;
+}
+
+header > ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+header > ul > li > a:hover{
+  color: #bababa;
+}
+
+header > h1 > a{
+  text-decoration: none;
+  color: white;
+}
+
+header > h1 > a:hover{
+  color: #bababa;
+}
+
+.projectItem > h3 > a{
+  text-decoration: none;
+  color: blue;
+}
+
+.projectItem > h3 > a:hover{
+  color: darkblue;
+}
+
+header{
+  display: inline-block;
+  width: 100%;
+  background-color: #b53c18;
+  color: white;
+}
+
+header > h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+  padding-left: 7.5%;
+  }
+
+header > ul{
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  padding-top: 24px;
+  float: right;
+  padding-right: 7.5%;
+  }
+
+header > ul > li {
+  display: inline;
+  padding-left: 20px;
+}

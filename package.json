@@ -1,0 +1,11 @@
+{
+  "name": "MyWebsiteNew",
+  "version": "0.0.1",
+  "description": "My personal website I'm putting on a cloud server",
+  "main": "app.js",
+  "author": "Jacob Stovall",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.13.0"
+  }
+}
