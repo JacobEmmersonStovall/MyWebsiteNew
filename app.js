@@ -33,12 +33,17 @@ router.get('/randomColor.html', function(req,res){
   res.redirect(301,'/randomcolor');
 });
 
-var server = app.listen(3000, function(){
-  console.log("Listening from local host");
+
+router.get('/filenotfound', function(req, res){
+  res.status(404).sendFile("FileNotFound.html", {root: __dirname+"/public"});
+});
+
+router.get('*',function(req,res){
+  res.redirect(301,'/filenotfound');
 });
 
 app.use('/',router);
 
-app.use(function(req,res){
-  res.status(404).sendFile("FileNotFound.html", {root: __dirname+"/public"})
+var server = app.listen(3000, function(){
+  console.log("Listening from local host");
 });
