@@ -40,5 +40,5 @@ var server = app.listen(3000, function(){
 app.use('/',router);
 
 app.use(function(req,res){
-  res.status(404).send("WHY YOU COME HERE");
+  res.status(404).sendFile("FileNotFound.html", {root: __dirname+"/public"})
 });
