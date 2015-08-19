@@ -33,6 +33,10 @@ router.get('/randomColor.html', function(req,res){
   res.redirect(301,'/randomcolor');
 });
 
+router.get('/intpres',function(req,res){
+  var presentation = __dirname+'/Intern_Presentation_Jacob_JS_2015-8-10.ppt';
+  res.download(presentation,'JacobStovallInternPres.ppt');
+});
 
 router.get('/filenotfound', function(req, res){
   res.status(404).sendFile("FileNotFound.html", {root: __dirname+"/public"});
